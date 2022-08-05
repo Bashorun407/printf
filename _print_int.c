@@ -12,8 +12,9 @@ int _print_int(va_list args)
 	char *ptr;
 
 	num = va_arg(args, int);
-	ptr = malloc(sizeof(*ptr) * num);
-	/* code will be written here... */
+
+	fprintf(stdout, "%d\n", num);
+
 	while (num > 0)
 	{
 		/* _putchar() here prints numbers in reverse order */
@@ -22,21 +23,7 @@ int _print_int(va_list args)
 		i++;
 		num /= 10;
 	}
-	/* printing a new line */
-	_putchar('\n');
-	/* reducing i by 1 to avoid pointer overflow */
-	i--;
-	/* to print the numbers in the correct order */
-	while (i >= 0)
-	{
-		/* _putchar(ptr[i]); */
-		fprintf(stdout, "%d", ptr[i]);
-		i--;
-		count++;
-	}
-	/* free memory occupied by ptr */
-	free(ptr);
 
-	return (count);
+	return (i);
 }
 

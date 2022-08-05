@@ -52,7 +52,7 @@ int _printf(const char * const format, ...)
 			{
 				i++;
 				/* _putchar('%');*/
-				fprintf(stdout, "%%", '%');
+				fprintf(stdout, "%c", '%');
 			}
 
 
