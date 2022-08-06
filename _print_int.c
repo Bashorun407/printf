@@ -8,7 +8,7 @@
 
 int _print_int(va_list args)
 {
-	int num = 0, i = 0, count = 0;
+	int num = 0, i = 0;
 	char *ptr;
 
 	num = va_arg(args, int);
