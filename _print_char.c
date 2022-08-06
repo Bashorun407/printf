@@ -8,11 +8,11 @@
  **/
 int _print_char(va_list args)
 {
-	int num = 0;
+	int x;
 
-	num = va_arg(args, int);
+	x = va_arg(args, int);
 
-	fprintf(stdout, "%c", va_arg(args, int));
+	fprintf(stdout, "%c", x);
 
 	return (1);
 }

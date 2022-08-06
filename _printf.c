@@ -26,41 +26,37 @@ int _printf(const char * const format, ...)
 			/* format[i] == '%' and format[i + 1] == 'c' i.e. printing characters*/
 			if (format[i + 1] == 'c')
 			{
-				/* _putchar(va_arg(args, int)); */
-				fprintf(stdout, "%c", va_arg(args, int));
 				i++;
-				return (1);
+				_print_char(args);
 			}
 
 			/* format[i] == '%' and format[i + 1] == 's' i.e. printing strings */
 			else if (format[i + 1] == 's')
 			{
 				i++;
-				str = va_arg(args, char *);
-				while (str[j] != '\0')
-				{
-					/* _putchar(str[j]); */
-					fprintf(stdout, "%c", str[j]);
-					j++;
-				}
-				return (j);
-
+				_print_string(args);
 			}
 
-			/* for %% or \%, i.e. the next character to print is %*/
+			/* for %% or \%, i.e. the next character (format[i + 1] == '%') to print is %*/
 			else if (format[i + 1] == '%')
 			{
 				i++;
-				/* _putchar('%');*/
-				fprintf(stdout, "%c", '%');
+				_print_percent();
 			}
 
 
 			/* for %d i.e. to print integers */
-			else if (format[i + 1] == 'd')
+			else if ((format[i + 1] == 'd') || (format[i + 1] == 'i'))
 			{
 				i++;
-				return (_print_int(args));
+				_print_int(args);
+			}
+
+			/* for %u i.e to print unsigned integers */
+			else if (format[i + 1] == 'u')
+			{
+				i++;
+				_print_uint(args);
 			}
 		}
 
