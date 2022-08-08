@@ -15,7 +15,6 @@ int _print_string(char *str)
 		count += _putchar(str[i]);
 	}
 
-	/* add a semicolon here */
-	return (count)
+	return (count);
 }
 
