@@ -25,6 +25,7 @@ int _print_decimal(int value)
 
 	count += _putchar((value % 10) + '0');
 
-	return (count);
+	/* add a semicolon here */
+	return (count)
 }
 
