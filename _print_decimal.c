@@ -1,9 +1,11 @@
 #include "main.h"
+
 /*
  * _print_decimal - prints decimal numbers
  *
  * @Returns: numbers of characters printed
  */
+
 int _print_decimal(int value)
 {
 	int count = 0;
@@ -25,7 +27,7 @@ int _print_decimal(int value)
 
 	count += _putchar((value % 10) + '0');
 
-	/* add a semicolon here */
-	return (count)
+	
+	return (count);
 }
 
