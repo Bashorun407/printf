@@ -1,9 +1,9 @@
 #include "main.h"
 
-/*
+/**
  * _print_decimal - prints decimal numbers
- *
- * @Returns: numbers of characters printed
+ * @value: integer to be printed
+ * Returns: numbers of characters printed
  */
 
 int _print_decimal(int value)
