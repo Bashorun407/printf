@@ -20,8 +20,8 @@ int _print_decimal(int value)
 	 * the last digit
 	 */
 
-	if (value/10)
-		count += _print_decimal(value/10);
+	if (value / 10)
+		count += _print_decimal(value / 10);
 
 	count += _putchar((value % 10) + '0');
 
