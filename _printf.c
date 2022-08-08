@@ -35,6 +35,10 @@ int _printf(const char *format, ...)
 					i++;
 					count += _putchar('%');
 					break;
+				case 'd':
+					i++;
+					count += _print_decimal(va_arg(data, int));
+					break;
 				default:
 					break;
 			}
