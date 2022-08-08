@@ -18,7 +18,6 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			count += _putchar(format[i]);
-			i++;
 		}
 		else if (format[i] == '%' && format[i + 1] != ' ')
 		{
@@ -31,6 +30,7 @@ int _printf(const char *format, ...)
 				case 's':
 					i++;
 					count += _print_string(va_arg(data, char *));
+					break;
 				case '%':
 					i++;
 					count += _putchar('%');
@@ -38,9 +38,8 @@ int _printf(const char *format, ...)
 				default:
 					break;
 			}
-
-			i++;
 		}
+		i++;
 	}
 
 	return (count);

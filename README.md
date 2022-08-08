@@ -12,4 +12,3 @@ File _print_int.c : prints integers to standard output; also returns the number 
 
 FIle _print_string.c : prints strings to standard output and returns number of characters printed
 
-

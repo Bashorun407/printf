@@ -8,17 +8,14 @@
  **/
 int _print_string(char *str)
 {
-	int j = 0;
+	int i = 0, count = 0;
 
-	/* str = va_arg(args, char *); */
-
-	while (str[j] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(str[j]);
-		j++;
+		count += _putchar(str[i]);
 	}
 
 	/* j is the number of string characters printed */
-	return (j);
+	return (count);
 }
 
