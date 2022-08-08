@@ -9,7 +9,6 @@ File _printf.c : Prints characters specified by the different functions to stand
 
 File _print_int.c : prints integers to standard output; also returns the number of digits printed
 
-File _print_char.c : prints characters to standard output and returns number of characer printed (usually 1);
 
 FIle _print_string.c : prints strings to standard output and returns number of characters printed
 

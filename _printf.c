@@ -10,6 +10,7 @@ int _printf(const char *format, ...)
 	int count = 0, i = 0;
 
 	va_list data;
+
 	va_start(data, format);
 
 
@@ -30,9 +31,6 @@ int _printf(const char *format, ...)
 				case 's':
 					i++;
 					count += _print_string(va_arg(data, char *));
-				case '%':
-					count += _print_percent(va_arg(data, char *));
-					break;
 				default:
 					break;
 			}
@@ -41,6 +39,7 @@ int _printf(const char *format, ...)
 		i++;
 	}
 
+	/* you will put semi-colon after the return statement */
 	return (count);
 }
 
