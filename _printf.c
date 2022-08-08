@@ -50,7 +50,6 @@ int _printf(const char *format, ...)
 		i++;
 	}
 
-	/* add a semicolon here */
-	return (count)
+	return (count);
 }
 
