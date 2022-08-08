@@ -6,18 +6,19 @@
  **
  ** Return: returns the number of items printed to standard output
  **/
-int _print_string(va_list args)
+int _print_string(char *str)
 {
-	char *str;
 	int j = 0;
 
-	str = va_arg(args, char *);
+	/* str = va_arg(args, char *); */
 
 	while (str[j] != '\0')
 	{
-		fprintf(stdout, "%c", str[j]);
+		_putchar(str[j]);
 		j++;
 	}
+
+	/* j is the number of string characters printed */
 	return (j);
 }
 

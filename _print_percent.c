@@ -4,10 +4,21 @@
  **
  ** Return: returns number of character printed
  **/
-int _print_percent(void)
+int _print_percent(char *str)
 {
-	fprintf(stdout, "%c", '%');
+	int i = 0;
 
-	return (1);
+	while (str[i] != '\0')
+	{
+		/* if the '%' is encountered, increment */
+		/* prints the second '%' */
+		if (str[i] == '%')
+			i++;
+		_putchar(str[i]);
+		i++;
+	}
+
+	/* i is the number of characters printed */
+	return (i);
 }
 
