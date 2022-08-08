@@ -31,6 +31,9 @@ int _printf(const char *format, ...)
 				case 's':
 					i++;
 					count += _print_string(va_arg(data, char *));
+				case '%':
+					i++;
+					count += _putchar('%');
 				default:
 					break;
 			}
