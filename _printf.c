@@ -39,6 +39,10 @@ int _printf(const char *format, ...)
 					i++;
 					count += _print_decimal(va_arg(data, int));
 					break;
+				case 'i':
+					i++;
+					count += _print_decimal(va_arg(data, int));
+					break;
 				default:
 					break;
 			}
