@@ -26,7 +26,7 @@ int _print_decimal(int value)
 		count += _print_decimal(value / 10);
 
 	count += _putchar((value % 10) + '0');
-	
+
 	return (count);
 }
 

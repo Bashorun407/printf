@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- * _printf: prints characters to standard output
+ ** _printf - prints characters to standard output
  * @format: pointer to character to be printed
  * @...: arguments to be passed to printf
  */
