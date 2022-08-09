@@ -45,10 +45,6 @@ int _printf(const char *format, ...)
 					i++;
 					count += _print_decimal(va_arg(data, int));
 					break;
-				case 'b':
-					i++;
-					count += _print_binary(va_arg(data, int));
-					break;
 				default:
 					break;
 			}
