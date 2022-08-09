@@ -1,11 +1,11 @@
 #include "main.h"
-
-/*
- ** _print_string -  prints characters (strings) to standard output
- ** @args: arguments passed from va_list; from which out will be printed
+/**
+ ** _print_string - prints characters (strings) to standard output
+ ** @str: string argument that will be printed to standard output
  **
- ** Return: returns the number of items printed to standard output
+ ** Return: returns the number of character strings printed
  **/
+
 int _print_string(char *str)
 {
 	int i = 0, count = 0;
@@ -15,6 +15,7 @@ int _print_string(char *str)
 		count += _putchar(str[i]);
 	}
 
+	/* j is the number of string characters printed */
 	return (count);
 }
 

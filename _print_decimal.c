@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- * _print_decimal - prints decimal numbers
- * @value: integer to be printed
- * Returns: numbers of characters printed
- */
-
+ ** _print_decimal - prints decimal (base 10)  numbers
+ ** @value: the number to be printed to standard output
+ **
+ ** Return: returns the number of items printed
+ **/
 int _print_decimal(int value)
 {
 	int count = 0;
@@ -17,10 +16,9 @@ int _print_decimal(int value)
 		value = value * (-1);
 	}
 
-	/* first remove the last digit of number and print
-	 * the remaining digits by recursion, then print
-	 * the last digit
-	 */
+	/* first remove the last digit of number and print*/
+	 /* the remaining digits by recursion, then print*/
+	 /* the last digit*/
 
 	if (value / 10)
 		count += _print_decimal(value / 10);

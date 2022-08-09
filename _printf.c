@@ -1,10 +1,12 @@
 #include "main.h"
-
-/*
+/**
  ** _printf - prints characters to standard output
- * @format: pointer to character to be printed
- * @...: arguments to be passed to printf
- */
+ ** @format: pointer to list of arguments to be printed
+ ** @...: arguments to be passed to printf
+ **
+ ** Return: numbers of characters printed
+ **/
+
 int _printf(const char *format, ...)
 {
 	int count = 0, i = 0;
@@ -42,6 +44,10 @@ int _printf(const char *format, ...)
 				case 'i':
 					i++;
 					count += _print_decimal(va_arg(data, int));
+					break;
+				case 'b':
+					i++;
+					count += _print_binary(va_arg(data, int));
 					break;
 				default:
 					break;
