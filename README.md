@@ -51,6 +51,6 @@ The output is written to standard output using fprintf(stdout,...);
 #### 7. The big print gives and the small print takes away ####
 
 - Handle the following flag characters for non-custom conversion specifiers:
-	- +
+	- \+
 	- space
-	- #
+	- \#
