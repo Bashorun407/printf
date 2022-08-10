@@ -47,3 +47,10 @@ The output is written to standard output using fprintf(stdout,...);
 #### 6. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print ####
 
 - Handle the following conversion specifier: p.
+
+#### 7. The big print gives and the small print takes away ####
+
+- Handle the following flag characters for non-custom conversion specifiers:
+	- +
+	- space
+	- #
