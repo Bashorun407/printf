@@ -14,3 +14,9 @@ The output is written to standard output using fprintf(stdout,...);
 	- s
 	- %
 
+#### 1. Education is when you read the fine print. Experience is what you get if you don't ####
+
+- Handle the following conversion specifiers:
+	- d
+	- i
+
