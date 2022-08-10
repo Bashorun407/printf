@@ -43,3 +43,7 @@ The output is written to standard output using fprintf(stdout,...);
 - Handle the following custom conversion specifier:
 	- S : prints the string.
 	- \x
+
+#### 6. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print ####
+
+- Handle the following conversion specifier: p.
